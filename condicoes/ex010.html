@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        #caixa {
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            border-radius: 15px;
+        }
+        #teste {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+            text-align: center;
+            color: black;
+            font-weight: bolder;
+
+        }
+        #res {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            color: white;
+            margin: 20px;
+        }
+        #btn {
+            color: white;
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        strong {
+            color: aqua;
+        }
+        p {
+            color: black;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="caixa">
+        
+        <p id="teste">Teste de Nacionalidade</p>
+        <label for="Qual seu pais">Qual seu País </label><input type="text" name="" id="textp">
+        <input type="button" value="Verificar" onclick="comparar()" id="btn">
+        <div id="res">
+        </div>
+    </div>
+
+    <script>
+
+
+        function comparar() {
+            var pais = document.querySelector('input#textp')
+            var valorPais = pais.value // Atribui o valor do pais acima
+            var res = document.querySelector('div#res')
+            if (valorPais == 'Brasil') {
+                res.innerHTML = 'Você é <strong>Brasileiro</strong>'
+            } else {
+                res.innerHTML = 'Você é <strong>Estrangeiro</strong>'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

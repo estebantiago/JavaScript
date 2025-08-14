@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightblue;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
+
+}
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+footer {
+    text-align: center ;
+    color: white;
+    
+    
+}
+div {
+    padding: 20px;
+    text-align: center;
+    
+}
+div#dia-semana {
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #212d61;
+
+}
+div#frase {
+    background-color: #deeff594;
+}
+footer > p {
+    
+    
+    color: #212d61;
+}
+

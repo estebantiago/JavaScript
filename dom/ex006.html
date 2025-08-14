@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando </title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input {
+            background-color: aliceblue;
+            width: 80px;
+            height: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#res {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+            background-color: azure;
+            width: 235px;
+        }
+
+        input#btn {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 50px;
+            height: 30px;
+            background-color:lightblue;
+            color: aliceblue;
+            border-radius: 50px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Somando Numeros </h1>
+
+    <input  type="textn1" name="" id="textn1">
+    <input type="textn2" name="" id="textn2">
+    <input type="button" value="somar" onclick="somar()" id="btn">
+    <div id="res">
+        resultado
+    </div>
+<script>
+    function somar(){
+    var tn1 = document.getElementById('textn1')
+    var tn2 = document.querySelector('input#textn2')
+    var res = document.getElementById('res')
+    var n1 = Number(tn1.value)
+    var n2 = Number(tn2.value) 
+    var s = n1 + n2 
+
+    res.innerText=`A soma entre ${n1} e ${n2} é ${s}!`
+    }
+
+
+
+
+</script>
+
+    
+</body>
+</html>
