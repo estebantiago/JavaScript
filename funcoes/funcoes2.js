@@ -37,11 +37,25 @@ console.log(num(10, 2))
 
 console.log('function fatorial-------------------------------------')
 
-function fatorial(n) {
-    fat = 1
-    for(let  c = n; n > 1; c--){
+function fatorial(n){
+    let fat = 1
+    for(let c = n; c > 1; c--){
         fat *= c
     }
-       return fat
+    return fat
 }
-console.log(fatorial(5))
+let resultado = fatorial(5)
+console.log(resultado)
+
+console.log('Recursividade -------------------------------------------')
+
+function fato_rial(n){
+    if(n == 1){
+        return 1
+    } else {
+        return n * fato_rial(n-1)
+    }
+}
+
+let resul = fato_rial(5)
+console.log(resul)

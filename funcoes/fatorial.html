@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Calculo Fatorial</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(49, 5, 90);
+
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        #container {
+            text-align: center;
+            box-shadow: 0px 0px 8px;
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            width: 50%;
+            min-height: 50%;
+            background-color: rgb(113, 73, 150);
+        }
+
+        #container>p {
+            font-size: 1.2em;
+            color: white;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        input[type='button'] {
+            font-weight: bolder;
+
+        }
+
+        #res {
+            text-align: center;
+            color: white;
+            font-size: 1.3em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Calculo Fatorial</h1>
+    </header>
+
+    <div id="container">
+        <p><label for="txtnumber">Digite um numero: <input type="number" id="txtnumber"></label></p>
+        <p><input type="button" value="Calcular" onclick="calcular()"></p>
+        <div id="res">
+            <p>Calculando....</p>
+
+            <script>
+                let calcular = () => {
+                    let num1 = document.querySelector('input#txtnumber')
+                  
+                    let res = document.querySelector('div#res')
+
+                    let n1 = Number(num1.value)
+                    
+                    let fat = 1
+                    for (let c = n1; c > 1; c--) {
+                        fat *= c
+                    }
+                    
+
+                    res.innerHTML = `Resultado:${fat}`
+
+                }
+            </script>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
