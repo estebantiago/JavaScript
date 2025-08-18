@@ -7,6 +7,13 @@ for(let pos = 0; pos < numero.length; pos++){
 */
 
 
-for(pos in numero){
-    console.log(`Posição: ${pos} tem o valor: ${numero[pos]}`)    // simplicido, serve somente para ojetos e array
+for(let pos in numero){
+    console.log(`Posição: ${pos} tem o valor: ${numero[pos]}` ) 
+
+    // simplicido, serve somente para ojetos e array
+
 }
+
+
+
+    
