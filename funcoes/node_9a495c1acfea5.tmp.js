@@ -37,7 +37,7 @@ console.log(num(10, 2))
 
 console.log('function fatorial-------------------------------------')
 
-function fatorial(n) {
+let fatorial = (n) => {
     fat = 1
     for(let  c = n; n > 1; c--){
         fat *= c
