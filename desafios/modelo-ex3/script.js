@@ -11,7 +11,7 @@ function contar() {
     var p = Number(passo.value)
 
     if (inicio.value.length == 0 || fim.value.length  == 0 || passo.value.length  == 0) {
-        res.innerHTML='Impossível contar! Faltam dados'
+       alert('Impossível contar! Faltam dados')
     } else { 
         res.innerHTML='Contando:'
         if(p <= 0){
@@ -19,7 +19,7 @@ function contar() {
             p = 1 
         }  
         if (i < f) {
-            for (let c = i; c <= f; c += p) {
+            for (let c = i; c <= f; c += p) {   
                 res.innerHTML += `${c} \u{1F449}`
             }
         } else {
